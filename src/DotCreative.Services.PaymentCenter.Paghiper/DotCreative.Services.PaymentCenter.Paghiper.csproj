@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>PaymentCenter - Paghiper</Title>
+    <Authors>Paulo Pereira</Authors>
+    <Company>DotCreative</Company>
+    <Description>Implementação e padronização das cobranças, consulta das transações e saques da plataforma de pagamento Paghiper.</Description>
+    <Copyright>Paulo Pereira</Copyright>
+    <PackageProjectUrl>https://github.com/paulopereira-tec/DotCreative.Services.PaymentCenter</PackageProjectUrl>
+    <PackageIcon>icon-paghiper.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/paulopereira-tec/DotCreative.Services.PaymentCenter</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Paghiper; Cobrança; Boleto; Pix; Central de Pagamentos.</PackageTags>
+    <PackageReleaseNotes>Implementação da geração de boletos e pix. Futuro: consulta das transações e solicitações de saque.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\icon-paghiper.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotCreative.Services.PaymentCenter.Core" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

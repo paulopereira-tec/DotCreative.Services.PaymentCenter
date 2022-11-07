@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Núcleo para central de pagamentos.</Title>
+    <Description>Este pacote reflete ao núcleo com classes que comporão as abstrações para criação da central de pagamentos. Ele será a base para todos os demais pacotes "PaymentCenter"</Description>
+    <PackageProjectUrl>https://github.com/paulopereira-tec/DotCreative.Services.PaymentCenter</PackageProjectUrl>
+    <Copyright>Paulo Pereira</Copyright>
+    <PackageIcon>icon-core.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/paulopereira-tec/DotCreative.Services.PaymentCenter</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Central de Pagamentos; Payment Center; Boletos; Cobranças; Cartão de Crédito; Cartão de Débito; Pix; BolePIX</PackageTags>
+    <PackageReleaseNotes>Esta é uma versão inicial. O objetivo futuro é implementar mais ferramentas e outras plataformas.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\icon-core.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="108.0.2" />
+  </ItemGroup>
+
+</Project>
