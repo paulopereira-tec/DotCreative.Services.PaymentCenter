@@ -5,9 +5,9 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotCreative.Services.PaymentCenter.Core", "DotCreative.Services.PaymentCenter.Core\DotCreative.Services.PaymentCenter.Core.csproj", "{F8E836E8-5E34-4997-A382-F9503A625ADB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotCreative.Services.PaymentCenter.Paghiper", "DotCreative.Services.PaymentCenter.Paghiper\DotCreative.Services.PaymentCenter.Paghiper.csproj", "{2756131B-3DBC-4E93-B81E-F68E616206B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotCreative.Services.PaymentCenter.Paghiper", "DotCreative.Services.PaymentCenter.Paghiper\DotCreative.Services.PaymentCenter.Paghiper.csproj", "{E4704F56-5C4A-4251-A7E8-44E9836B09BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotCreative.Services.PaymentCenter.Tests", "DotCreative.Services.PaymentCenter.Tests\DotCreative.Services.PaymentCenter.Tests.csproj", "{0C1C53CA-601C-4085-ADB9-232CF151596E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotCreative.Services.PaymentCenter.UnityTests", "DotCreative.Services.PaymentCenter.UnityTests\DotCreative.Services.PaymentCenter.UnityTests.csproj", "{38B040B3-1C7C-445B-9209-8C20487FBD60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{F8E836E8-5E34-4997-A382-F9503A625ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8E836E8-5E34-4997-A382-F9503A625ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8E836E8-5E34-4997-A382-F9503A625ADB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2756131B-3DBC-4E93-B81E-F68E616206B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2756131B-3DBC-4E93-B81E-F68E616206B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2756131B-3DBC-4E93-B81E-F68E616206B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2756131B-3DBC-4E93-B81E-F68E616206B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C1C53CA-601C-4085-ADB9-232CF151596E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C1C53CA-601C-4085-ADB9-232CF151596E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C1C53CA-601C-4085-ADB9-232CF151596E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C1C53CA-601C-4085-ADB9-232CF151596E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4704F56-5C4A-4251-A7E8-44E9836B09BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4704F56-5C4A-4251-A7E8-44E9836B09BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4704F56-5C4A-4251-A7E8-44E9836B09BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4704F56-5C4A-4251-A7E8-44E9836B09BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B040B3-1C7C-445B-9209-8C20487FBD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B040B3-1C7C-445B-9209-8C20487FBD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B040B3-1C7C-445B-9209-8C20487FBD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B040B3-1C7C-445B-9209-8C20487FBD60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

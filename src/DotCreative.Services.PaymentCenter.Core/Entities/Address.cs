@@ -1,4 +1,4 @@
-﻿namespace DotCreative.Services.PaymentCenter.Core.Abstractions;
+﻿namespace DotCreative.Services.PaymentCenter.Core.Entities;
 
 public class Address
 {
@@ -10,6 +10,10 @@ public class Address
   public string Zipcode { get; set; }
   public string Complement { get; set; }
 
+  public Address()
+  {
+
+  }
   public Address(string street, int number, string neighborhood, string city, string state, string zipcode, string complement)
   {
     Street = street;

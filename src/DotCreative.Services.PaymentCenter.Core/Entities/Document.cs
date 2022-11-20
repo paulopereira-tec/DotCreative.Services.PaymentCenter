@@ -1,11 +1,16 @@
-﻿using DotCreative.Services.PaymentCenter.Core.Enums;
+﻿using DotCreative.Services.PaymentCenter.Core.Shared.Enums;
 
-namespace DotCreative.Services.PaymentCenter.Core.Abstractions;
+namespace DotCreative.Services.PaymentCenter.Core.Entities;
 
 public class Document
 {
   public EDocumentType Type { get; set; }
   public string Subscription { get; set; }
+
+  public Document()
+  {
+
+  }
 
   public Document(EDocumentType type, string subscription)
   {

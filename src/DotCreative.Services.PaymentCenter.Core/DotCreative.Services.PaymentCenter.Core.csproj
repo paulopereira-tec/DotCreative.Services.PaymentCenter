@@ -14,12 +14,9 @@
     <RepositoryUrl>https://github.com/paulopereira-tec/DotCreative.Services.PaymentCenter</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Central de Pagamentos; Payment Center; Boletos; Cobranças; Cartão de Crédito; Cartão de Débito; Pix; BolePIX</PackageTags>
-    <PackageReleaseNotes>Esta é uma versão inicial. O objetivo futuro é implementar mais ferramentas e outras plataformas.</PackageReleaseNotes>
+    <PackageReleaseNotes>Ajustado os métodos para a listagem de bancos disponíveis para transferência e transações. Também ajustado o método abstrato para solicitação de transferência de valores.</PackageReleaseNotes>
+    <Version>1.0.1</Version>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\..\icon-core.png">
@@ -34,6 +31,10 @@
 
   <ItemGroup>
     <PackageReference Include="RestSharp" Version="108.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Shared\Helpers\" />
   </ItemGroup>
 
 </Project>

@@ -16,8 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotCreative.Services.PaymentCenter.Abstractions\DotCreative.Services.PaymentCenter.Core.csproj" />
+    <ProjectReference Include="..\DotCreative.Services.PaymentCenter.Core\DotCreative.Services.PaymentCenter.Core.csproj" />
     <ProjectReference Include="..\DotCreative.Services.PaymentCenter.Paghiper\DotCreative.Services.PaymentCenter.Paghiper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataTests\" />
   </ItemGroup>
 
 </Project>

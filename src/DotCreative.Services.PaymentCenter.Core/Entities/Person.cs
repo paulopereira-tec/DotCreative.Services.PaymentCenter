@@ -1,6 +1,4 @@
-﻿using DotCreative.Services.PaymentCenter.Core.Enums;
-
-namespace DotCreative.Services.PaymentCenter.Core.Abstractions;
+﻿namespace DotCreative.Services.PaymentCenter.Core.Entities;
 
 public class Person
 {
@@ -10,6 +8,10 @@ public class Person
   public Telephone Telephone { get; set; }
   public Address Address { get; set; }
 
+  public Person()
+  {
+
+  }
   public Person(string name, string email, Document document, Telephone telephone, Address address)
   {
     Name = name;
