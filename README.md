@@ -1,3 +1,8 @@
+[![Core](https://img.shields.io/nuget/v/DotCreative.Services.PaymentCenter.Core.svg?style=for-the-badge)](https://www.nuget.org/packages/DotCreative.Services.PaymentCenter.Core/)
+![Nuget](https://img.shields.io/nuget/dt/DotCreative.Services.PaymentCenter.Core?label=Download|Core&style=for-the-badge)
+![Nuget](https://img.shields.io/nuget/dt/DotCreative.Services.PaymentCenter.Paghiper?label=Download|Paghiper&style=for-the-badge)
+
+
 # Payment Center
 O projeto **PaymentCenter** é uma iniciativa *open source* com o objetivo de criar uma ferramenta que padronize a utilização de plataformas de pagamentos e bancos utilizadas no mercado.
 

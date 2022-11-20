@@ -15,7 +15,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>Central de Pagamentos; Payment Center; Boletos; Cobranças; Cartão de Crédito; Cartão de Débito; Pix; BolePIX</PackageTags>
     <PackageReleaseNotes>Ajustado os métodos para a listagem de bancos disponíveis para transferência e transações. Também ajustado o método abstrato para solicitação de transferência de valores.</PackageReleaseNotes>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
