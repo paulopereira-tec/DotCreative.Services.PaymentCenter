@@ -1,6 +1,12 @@
 # Payment Center
 O projeto **PaymentCenter** é uma iniciativa *open source* com o objetivo de criar uma ferramenta que padronize a utilização de plataformas de pagamentos e bancos utilizadas no mercado.
 
+Sinta-se a vontade para ajudar com a implementação de novas plataformas. Nos ajude a fazer com que este projeto cresça.
+
+**Pacotes NuGet:** Para localizar os pacotes NuGet desse projeto, pesquise por "DotCreative.Service.PaymentCenter" e logo achará todas as opções disponiveis. Exemplo no link https://www.nuget.org/packages?q=DotCreative.Services.PaymentCenter
+
+**Versionamento:** Para facilitar seguiremos o padrão SEMVER (https://semver.org/lang/pt-BR/) e a numeração principal a ser seguida será do projeto Core (núcleo). Logo, se a última versão do projeto for 2.0.0, todos os demais também terão a mesma versão.
+
 ## Histórico
 Atualmente, entre as atuais plataformas de pagamento e bancos do mercado não existe nenhuma padronização na forma com que é feita a geração da cobrança, consulta e listagem das mesmas.
 
@@ -9,8 +15,17 @@ Cada banco e cada plataforma de pagamento tem seus meios e métodos de implement
 Este projeto foi pensado para ser *open source*. Ajude na implementação de novas plataformas e melhorias.
 
 ## Plataformas já integradas
+Na tabela abaixo, confira as integrações já realizadas. A ordem da tabela será a ordem em que serão priorizadas as integrações.
 
-- *Paghiper:* Boleto e PIX.
+| Plataforma  | UA         | Boleto        | PIX           | Cartão de Crédito | Cartão de débito | Transferências |
+| ----------- | ---------- | ------------- | ------------- | ----------------- | ---------------- | -------------- |
+| Paghiper    | 20/11/2022 | Disponível    | Disponível    | Disponível        | Disponível       | Disponível     |
+| Gerencianet | -          | Indisponível  | Indisponível  | Indisponível      | Indisponível     | Indisponível   |
+| MercadoPago | -          | Indisponível  | Indisponível  | Indisponível      | Indisponível     | Indisponível   |
+| Pagseguro   | -          | Indisponível  | Indisponível  | Indisponível      | Indisponível     | Indisponível   |
+| Bradesco    | -          | Indisponível  | Indisponível  | Indisponível      | Indisponível     | Indisponível   |
+| Santander   | -          | Indisponível  | Indisponível  | Indisponível      | Indisponível     | Indisponível   |
+| Braspag     | -          | Indisponível  | Indisponível  | Indisponível      | Indisponível     | Indisponível   |
 
 ## Entenda como funciona
 A forma da implementação é bem simples e pode ser visualizada no projeto de testes. Cada plataforma poderá ser implementada separadamente ou em conjunto. As regras abaixo seguirá igualmente para todas as plataformas.
@@ -58,8 +73,6 @@ Após a instancia dos objetos, prossiga com a execução da transação. No exem
 
 ```
 // Crie uma transação básica.
-Transaction transaction = Arrange.ForTransaction(transactionType);
-
 // Instancie a plataforma de pagamento desejada.
 PaghiperPlatform platform = new PaghiperPlatform();
 
