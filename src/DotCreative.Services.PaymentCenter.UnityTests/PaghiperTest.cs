@@ -1,4 +1,5 @@
-﻿using DotCreative.Services.PaymentCenter.Paghiper;
+﻿using DotCreative.OpenSource.PrimitiveTypesValidations;
+using DotCreative.Services.PaymentCenter.Paghiper;
 using System.Diagnostics;
 
 namespace DotCreative.Services.PaymentCenter.UnityTests;
@@ -49,7 +50,7 @@ public class PaghiperTest
       ICollection<Transaction> transactions = await paghiper.List(type, dateStart, dateEnd, 100, 1);
 
       // Assert
-      Assert.IsTrue(transactions.Count > 0);
+      Assert.IsTrue(transactions.Count.IsGreaterThan(0));
     }
     catch (Exception ex)
     {
@@ -103,6 +104,54 @@ public class PaghiperTest
 
       // Assert
       Assert.IsTrue(isCanceled);
+    }
+    catch (Exception ex)
+    {
+      Debug.WriteLine(ex.Message);
+      Debug.WriteLine(ex.StackTrace);
+      Assert.Fail(ex.Message);
+    }
+  }
+
+  [TestMethod("Listagem de bancos disponíveis para transferência.")]
+  public async Task MustBeSuccess_ListAvailableBanksForTransfers()
+  {
+    // Arrange
+    PlatformData platform = Arrange.PaghiperPlatformData();
+    PaghiperPlatform paghiper = new PaghiperPlatform(platform);
+
+    try
+    {
+      // Act
+      ICollection<Bank> banks = await paghiper.ListAvailableBanksForTransfers();
+
+
+      // Assert
+      Assert.IsTrue(banks.Count().IsGreaterThan(0));
+    }
+    catch (Exception ex)
+    {
+      Debug.WriteLine(ex.Message);
+      Debug.WriteLine(ex.StackTrace);
+      Assert.Fail(ex.Message);
+    }
+  }
+
+  [TestMethod("Solicitação de saque/transferência de valor.")]
+  public async Task MustBeSuccess_Transfer()
+  {
+    // Arrange
+    PlatformData platform = Arrange.PaghiperPlatformData();
+    PaghiperPlatform paghiper = new PaghiperPlatform(platform);
+    ICollection<Bank> banks = await paghiper.ListAvailableBanksForTransfers();
+
+    try
+    {
+      // Act
+      bool isTransfered = await paghiper.Transfer(banks.First());
+
+      // Assert
+      Assert.IsTrue(isTransfered);
     }
     catch (Exception ex)
     {

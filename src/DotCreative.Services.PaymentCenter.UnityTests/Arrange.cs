@@ -41,5 +41,5 @@ public static class Arrange
   /// Configura os dados necessários para contectar-se a plataforma de pagamento
   /// </summary>
   public static PlatformData PaghiperPlatformData()
-  => new PlatformData("", "");
+  => new PlatformData("7GPX8CPT7KZPKGGRHTTJ2MFJNQ6O1K780X689V1HF16Z", "apk_42347047-WYsOMGJNWbHZlfagwLivvuOLkmrItDUQ");
 }
